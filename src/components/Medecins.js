@@ -3,11 +3,6 @@ import { Link } from "react-router-dom";
 import Axios from 'axios';
 import { DataGrid,GridToolbar } from '@mui/x-data-grid';
 import CircularProgress from '@mui/material/CircularProgress';
-import Button from '@mui/material/Button'
-
-
-
-
 
 function Medecins(){
 
@@ -50,8 +45,7 @@ function Medecins(){
 
     return(
         <div style={{ height: 500, width: '100%' }}>
-        <DataGrid rows={medecins} columns={columns}  components={{Toolbar: GridToolbar,
-  }} />
+        <DataGrid rows={medecins} columns={columns}  components={{Toolbar: GridToolbar}} />
         </div>
     )}
 

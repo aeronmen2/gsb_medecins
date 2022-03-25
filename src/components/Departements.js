@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import Axios from 'axios';
-import { useTable } from 'react-table';
 import MapChart from "./MapDep";
 
 
@@ -12,7 +10,6 @@ function Departements(){
     useEffect(async() => {
       const datas = await Axios.get('http://localhost:3001/departement');
       setDepartemens(datas.data[0]);
-
     }, []);
 
     return(
