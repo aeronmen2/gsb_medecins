@@ -27,6 +27,7 @@ function Medecins(){
         { field: 'tel', headerName: 'Téléphone', flex: 0.5 },
         { field: 'specialiteComplementaire', headerName: 'Specialité Complémentaire', flex: 0.6 },
         { field: 'libelle', headerName: 'Département', flex: 0.5 },
+
         { field: "Modify", 
 
             renderCell: (cellValues) => {
