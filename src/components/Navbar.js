@@ -40,7 +40,7 @@ function Navbar() {
             <img src={logo} alt="Logo" width={270}/>
                 <NavUnlisted>
                     {links.map((link,index) => (
-                        <NavLink key={index} to={link.path} exact activeClassName="current">
+                        <NavLink key={index} to={link.path} exact activeclassname="current">
                             <li>{link.name}</li>
                         </NavLink>
                     ))}

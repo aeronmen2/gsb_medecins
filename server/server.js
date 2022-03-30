@@ -66,10 +66,20 @@ app.get('/departement', async (req, res) => {
        const departement = await db.query("SELECT * FROM departement");
         res.send(departement);
     }catch(error){
-        console.log("erreur")
+        console.log(error)
     };
    });
 
+
+app.get('/pays', async (req, res) => {
+    try{
+        const db = await getConnection();
+        const pays = await db.query("SELECT * FROM pays");
+        res.send(pays);
+    }catch(error){
+        console.log(error)
+    };
+});
 
 
 app.listen("3001", () => {

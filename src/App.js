@@ -6,12 +6,15 @@ import MedecinInfo from "./components/MedecinInfo";
 import Navbar from "./components/Navbar";
 import Departements from "./components/Departements";
 import Pays from "./components/Pays";
+import LoginPage from "./components/Login";
+import CreateMedecins from "./components/CreateMedecins";
 import './App.css';
 
 function App(){
 
   return (
-    <div className="App">   
+    <div className="App">
+
     <Router>
       <Navbar/>
         <Routes>
@@ -19,6 +22,8 @@ function App(){
           <Route exact path="/medecininfo/:idMedecin" element={<MedecinInfo/>} /> 
           <Route exact path="/departements" element={<Departements/>} />
           <Route exact path="/pays" element={<Pays/>} />
+          <Route exact path="/login" element={<LoginPage/>} />
+          <Route exact path="/createmedecins" element={<CreateMedecins/>} />
       </Routes>
     </Router>
     </div>
